@@ -26,5 +26,8 @@
     "next-tinacms-cloudinary": "^4.3.0",
     "tinacms": "^2.2.4",
     "tinacms-gitprovider-github": "^2.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.5.5"
   }
 }
