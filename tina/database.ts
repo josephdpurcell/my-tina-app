@@ -5,14 +5,19 @@ import { GitHubProvider } from "tinacms-gitprovider-github";
 // const isLocal = process.env.TINA_PUBLIC_IS_LOCAL === "true";
 const isLocal = true;
 
+// const token = process.env.GITHUB_PERSONAL_ACCESS_TOKEN as string;
+// const owner = (process.env.GITHUB_OWNER ||
+//   process.env.VERCEL_GIT_REPO_OWNER) as string;
+// const repo = (process.env.GITHUB_REPO ||
+//   process.env.VERCEL_GIT_REPO_SLUG) as string;
+// const branch = (process.env.GITHUB_BRANCH ||
+//   process.env.VERCEL_GIT_COMMIT_REF ||
+//   "main") as string;
+
 const token = process.env.GITHUB_PERSONAL_ACCESS_TOKEN as string;
-const owner = (process.env.GITHUB_OWNER ||
-  process.env.VERCEL_GIT_REPO_OWNER) as string;
-const repo = (process.env.GITHUB_REPO ||
-  process.env.VERCEL_GIT_REPO_SLUG) as string;
-const branch = (process.env.GITHUB_BRANCH ||
-  process.env.VERCEL_GIT_COMMIT_REF ||
-  "main") as string;
+const owner = process.env.GITHUB_OWNER as string;
+const repo = process.env.GITHUB_REPO as string;
+const branch = process.env.GITHUB_BRANCH as string;
 
 if (!branch) {
   throw new Error(

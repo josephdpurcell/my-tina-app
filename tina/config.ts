@@ -11,6 +11,7 @@ const branch = process.env.GITHUB_BRANCH;
 const auth = new LocalAuthProvider();
 
 export default defineConfig({
+  contentApiUrlOverride: "/api/tina/gql",
   authProvider: auth,
   // clientId: process.env.TINA_CLIENT_ID!,
   // branch: branch,
