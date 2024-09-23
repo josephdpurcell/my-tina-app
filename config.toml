@@ -1,6 +1,9 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://josephdpurcell.github.io/my-tina-app'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 #theme = "ananke"
 theme = ["github.com/theNewDynamic/gohugo-theme-ananke"]
 publishDir = "docs"
+
+#RelativeURLs=true
+#CanonifyURLs=true
